@@ -1,0 +1,23 @@
+changesDir: .changes
+unreleasedDir: unreleased
+versionExt: md
+versionFormat: '## {{.Version}} - {{.Time.Format "2006-01-02"}}'
+kindFormat: '### {{.Kind}}'
+changeFormat: '- {{.Body}} #{{.Custom.Issue}}'
+projects:
+  - label: project1
+    key: project1
+    changelog: modules/project1/CHANGELOG.md
+  - label: project2
+    key: project2
+    changelog: modules/project2/CHANGELOG.md
+  - label: project3
+    key: project3
+    changelog: modules/project3/CHANGELOG.md
+kinds:
+- label: Added
+  auto: minor
+- label: Improved
+  auto: minor
+- label: Changed
+  auto: major

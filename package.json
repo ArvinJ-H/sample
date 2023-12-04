@@ -1,0 +1,15 @@
+{
+    "name": "root",
+    "private": true,
+    "workspaces": [
+      "modules/*"
+    ],
+    "scripts": {
+      "changie-merge": "changie merge -u '## Unreleased'",
+      "changie-batch": "changie batch auto --project"
+    },
+    "devDependencies": {
+      "changie": "^1.14.0"
+    }
+}
+  
